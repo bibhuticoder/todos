@@ -1,0 +1,83 @@
+<html>
+
+<title>Mero Todos</title>
+<head>
+
+    <script type="text/javascript" src="js/jquery-min.js"></script> 
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>        
+    <script type="text/javascript" src="js/login.js"></script>       
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />           
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+    
+    <script>
+       
+        
+    </script>
+
+<body style="background-image:url('../images/backPic.png')">
+
+    <div class="container" style="text-align:center">
+                
+        <br>
+        <p id="title" class="lead">
+            To dos
+        </p>
+        <br>
+        
+<!--    Login Form   -->      
+            
+            <input type="text" class="form-control loginText" placeholder="Username" style="width: 500px; margin: 0 auto" autocomplete="off" id="username" required />
+            <br>
+            <input type="password" class="form-control loginText" placeholder="Password"  style="width: 500px; margin: 0 auto" autocomplete="off" id="password" required />
+                     
+            <br>
+            
+            <button id="btnLogin" class="btn btn-success btn-lg" > Login  </button>
+<!--  //form end  -->
+      
+                 
+        <hr>
+        
+        <p class="lead">A simple todos application with clean and beautiful UI</p>
+        
+        <p> Don't have an acount ? Register here and get moving within few seconds..</p>
+        
+        <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#registerWindow"> Register </button>
+        
+        <br><br>
+        <div class="alert alert-success" id="alert" hidden="hidden"></div>
+        
+        
+    <!--  Register form Window  -->
+    <div id="registerWindow" class="modal fade bs-example-modal-sm"  role="dialog" >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content newTaskModal">
+         
+            <label class="lead">Give your short info to get started</label>
+            <hr>
+            
+            <!--     Registration form       -->
+                <input type="text" class="form-control" placeholder="Username" id="Rusername" required />
+                <br>
+                <input type="password" class="form-control" placeholder="Password" id="Rpassword" required />
+                <br>
+                <input type="password" class="form-control" placeholder="Retype Password" id="Rrepassword" required />
+                <br>
+                <button id="btnRegister" class="btn btn-primary" data-toggle="modal" data-target="#registerWindow"> Sign Up  </button>
+            <!--     Form end       -->
+              
+           
+        </div>
+      </div>
+    </div>
+        
+        
+        
+        
+    </div>
+    
+</body>
+</html>

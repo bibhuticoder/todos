@@ -1,0 +1,217 @@
+body{
+    
+    padding: 20px;
+    margin: 0;
+    background-color: whitesmoke;
+    overflow: hidden;    
+    background-size:cover;
+    background-repeat: round;
+    
+}
+
+#page{
+    
+    width: 100%;
+    min-width: 400px;
+    height: 100%;   
+    background-color: white;    
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 20px;
+    overflow: auto;
+    opacity: 0.8;
+    
+}
+
+#top{
+        
+    font-family: monospace;    
+    padding-left: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: dodgerblue;
+    color: #373737;
+    margin-bottom: 10px;
+    height: 60px;
+    
+}
+
+#title{
+        
+    margin-left: 5px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#logo{
+    
+    float: left;
+    background-image: url("../images/logo.png");
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    
+}
+
+#currentDate{
+    
+    // float: right;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-top: 15px;
+    color: gray;
+}
+
+#signup{
+    
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.taskGroup{
+    
+    height: auto;
+    width: auto;
+   
+}
+
+.taskContainer{
+    
+    height: auto;
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 2px;
+    text-overflow:ellipsis;       
+}
+
+.taskContainer:hover{
+    background-color: aliceblue;
+}
+
+.checkBox{
+    
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    float: left;
+    background-size:contain;
+    
+}
+
+.remove{
+    
+    float: right;
+    color: gray;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+.remove:hover{
+  
+    color: #373737;
+    font-weight: bold;
+    
+}
+
+.checked{
+    background-image: url("../images/checked.png");
+}
+
+.unchecked{
+    background-image: url("../images/unchecked.png");
+}
+
+.taskName{
+    
+    float: left;
+    font-family: monospace;
+    font-size: 20px;
+    color: #373737;
+    margin-top: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+.taskName:hover{
+    
+    color: maroon;
+}
+
+.full-width{
+    width: 100%;
+    text-overflow: clip;
+} 
+
+#btnAddNew{
+   
+    position: absolute;
+    left: 500;
+    top: 100;
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    background-color: dodgerblue;
+    box-shadow: 1px 1px 5px 1px gray;
+    text-align: center;
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 45px;
+    cursor: pointer;
+   
+}
+
+#btnAddNew:hover{
+    opacity: 0.9;
+}
+
+#taskDesc{
+    
+    height: 200px;    
+    resize: none;
+    
+}
+
+.form-control{
+    
+    font-family: monospace;
+       
+}
+
+.highlight{
+    
+    font-family: monospace;
+    color: maroon;
+    font-size: 12px;
+}
+
+.btn:focus{
+    
+    outline: none;
+}
+
+.modal-content{
+    
+    padding: 15px;
+    text-align: center;    
+    overflow:auto;
+    
+}
+
+.alert{
+    
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    
+}
+
+
+

@@ -1,0 +1,69 @@
+<html>
+<head>
+    
+    <title>To dos</title>
+    
+    <script type="text/javascript" src="js/jquery-min.js"></script> 
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>        
+    <script type="text/javascript" src="js/script.js"></script>
+        
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />           
+    <link rel="stylesheet" href="css/styles.css" />
+    
+</head>
+
+<body style="background-image:url('../images/back2.jpg')">
+    
+    <div id="page">
+            
+        <div id="top">
+            
+            <div id="logo"></div>
+            <label id="title"> To dos </label>
+            <label id="currentDate">@ 2070/03/12</label>
+            <form method="post" action="signup" id="signup">
+                <button class="btn btn-primary">Leave</button>
+            </form>
+            
+            
+                        
+        </div>
+        
+        <p hidden="hidden" id="id"><%= id %></p>
+         
+            <div id="taskGroup"> 
+                <!--   Tasks goes here    -->                                            
+            </div> 
+            
+        </div>
+    
+    <!--  Add new Task Window  -->
+    <div id="fadeWindow" class="modal fade bs-example-modal-sm"  role="dialog" >
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content newTaskModal">
+         
+            <hr>
+            <label id="taskIndex" hidden="hidden"></label>
+            <label id="taskStatus" hidden="hidden"></label>
+            <input type="text" id="taskName" class="form-control" placeholder="Task name" />
+            <br>
+            
+            <label id="dateAdded" class="highlight pull-left">Date added : 2016/04/05</label>
+            <textarea class="form-control" id="taskDesc" placeholder="Task description...."></textarea>
+
+            <hr>
+            <button class="btn btn-primary" id="btnAdd" data-toggle="modal" data-target="#fadeWindow">Add</button>
+            <button class="btn btn-success" id="btnUpdate" data-toggle="modal" data-target="#fadeWindow">Update</button>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Plus Button-->
+    <div id="btnAddNew" data-toggle="modal" data-target="#fadeWindow">+</div>
+
+    
+</body>
+</html>
